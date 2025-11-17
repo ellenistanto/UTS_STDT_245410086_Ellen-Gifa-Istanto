@@ -1,6 +1,6 @@
 # UTS Sistem Terdistribusi Dan Terdesentralisasi
 **Nama Repo:** bebas  
-**NIM:* 245410086
+**NIM:** 245410086
 **Nama:** Ellen Gifa Istanto 
 **Kelas:**IF 2
 ---
@@ -136,6 +136,7 @@ Keuntungan streaming replication:
 
 ## Lisensi
 Dokumentasi ini bebas digunakan dan dimodifikasi.
+
 
 
 
