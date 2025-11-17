@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  primary:
+    image: postgres:15
+    container_name: primary-db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./primary/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - primary_data:/var/lib/postgresql/data
+
+  replica:
+    image: postgres:15
+    container_name: replica-db
+    depends_on:
+      - primary
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./replica/replica.sh:/docker-entrypoint-initdb.d/replica.sh
+      - replica_data:/var/lib/postgresql/data
+
+volumes:
+  primary_data:
+  replica_data:
