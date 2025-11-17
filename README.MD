@@ -2,7 +2,7 @@
 **NIM:** 245410086
 **Nama:** Ellen Gifa Istanto 
 
-**Kelas:**IF 2
+**Kelas:** IF 2
 ---
 
 ## 1. Teorema CAP dan BASE
@@ -136,6 +136,7 @@ Keuntungan streaming replication:
 
 ## Lisensi
 Dokumentasi ini bebas digunakan dan dimodifikasi.
+
 
 
 
