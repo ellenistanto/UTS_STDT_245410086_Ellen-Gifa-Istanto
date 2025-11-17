@@ -60,31 +60,18 @@ Saat membuat project microservice sederhana (Auth Service + Video Service), saya
 
 ### ### Diagram GraphQL sebagai IPC Layer
 
-flowchart LR
-    subgraph Client Side
-        A[Frontend App / Mobile App]
-    end
-
-    subgraph IPC Layer - GraphQL Server
-        B1[GraphQL Schema<br>Query / Mutation / Subscription]
-        B2[GraphQL Resolver<br>(Business Logic)]
-        B3[Data Loader<br>(Batching & Caching)]
-    end
-
-    subgraph Backend Services
-        C1[(Database)]
-        C2[Microservice A]
-        C3[Microservice B]
-        C4[External API]
-    end
-
-    A -->|Send Query/Mutation| B1
-    B1 --> B2
-    B2 -->|Optimized Fetch| B3
-    B3 -->|Unified Access| C1
-    B3 --> C2
-    B3 --> C3
-    B3 --> C4
-
+                +-----------------------+
+                |        Client         |
+                +-----------+-----------+
+                            |
+                            v
+                 +------------------------+
+                 |     GraphQL Gateway    |
+                 +--+---------+---------+-+
+                    |         |         |
+                    v         v         v
+        +-----------+--+  +---+-----------+  +----------------+
+        | Auth Service |  | Video Service |  |   User DB     |
+        +--------------+  +---------------+  +----------------+
 
 
