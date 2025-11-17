@@ -1,7 +1,7 @@
 # UTS Sistem Terdistribusi Dan Terdesentralisasi
-##**NIM:** 245410086
-##**Nama:** Ellen Gifa Istanto
-##**Kelas:** IF 2
+**NIM:** 245410086
+**Nama:** Ellen Gifa Istanto
+**Kelas:** IF 2
 ---
 
 ## 1. Teorema CAP dan BASE
@@ -135,6 +135,7 @@ Keuntungan streaming replication:
 
 ## Lisensi
 Dokumentasi ini bebas digunakan dan dimodifikasi.
+
 
 
 
