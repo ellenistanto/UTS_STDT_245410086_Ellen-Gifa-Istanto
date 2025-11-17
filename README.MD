@@ -1,7 +1,8 @@
-# UTS Sistem Terdistribusi  
+# UTS Sistem Terdistribusi Dan Terdesentralisasi
 **Nama Repo:** bebas  
-**Deskripsi:** Jawaban UTS meliputi CAP & BASE, GraphQL & komunikasi antar proses, serta implementasi Streaming Replication PostgreSQL dengan Docker Compose.
-
+**NIM:* 245410086
+**Nama:** Ellen Gifa Istanto 
+**Kelas:**IF 2
 ---
 
 ## 1. Teorema CAP dan BASE
@@ -135,5 +136,6 @@ Keuntungan streaming replication:
 
 ## Lisensi
 Dokumentasi ini bebas digunakan dan dimodifikasi.
+
 
 
