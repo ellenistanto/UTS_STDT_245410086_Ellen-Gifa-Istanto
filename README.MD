@@ -59,4 +59,17 @@ Saat membuat project microservice sederhana (Auth Service + Video Service), saya
 ---
 
 ### ### Diagram GraphQL sebagai IPC Layer
+                +-----------------------+
+                |        Client         |
+                +-----------+-----------+
+                            |
+                            v
+                 +------------------------+
+                 |     GraphQL Gateway    |
+                 +--+---------+---------+-+
+                    |         |         |
+                    v         v         v
+        +-----------+--+  +---+-----------+  +----------------+
+        | Auth Service |  | Video Service |  |   User DB     |
+        +--------------+  +---------------+  +----------------+
 
